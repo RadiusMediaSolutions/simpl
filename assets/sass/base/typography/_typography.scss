@@ -1,0 +1,64 @@
+@import "headings";
+@import "copy";
+
+// Font Family
+$heading-font: "Coustard", serif;
+$logo-font: "UnifrakturMaguntia", cursive;
+$body-font: "Open Sans";
+$fontawesome: "FontAwesome";
+
+/*-- Google Font --*/
+@import url("https://fonts.googleapis.com/css2?family=Coustard:wght@400;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+
+/*-- Custom Font --*/
+@font-face {
+  font-family: "Gordita";
+  src: url("/assets/fonts/Gordita-Light.eot");
+  src: url("/assets/fonts/Gordita-Light.eot?#iefix") format("embedded-opentype"),
+    url("/assets/fonts/Gordita-Light.woff2") format("woff2"),
+    url("/assets/fonts/Gordita-Light.woff") format("woff"),
+    url("/assets/fonts/Gordita-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gordita";
+  src: url("/assets/fonts/Gordita-Regular.eot");
+  src: url("/assets/fonts/Gordita-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("/assets/fonts/Gordita-Regular.woff2") format("woff2"),
+    url("/assets/fonts/Gordita-Regular.woff") format("woff"),
+    url("../fonts/Gordita-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gordita";
+  src: url("/assets/fonts/Gordita-Medium.eot");
+  src: url("/assets/fonts/Gordita-Medium.eot?#iefix")
+      format("embedded-opentype"),
+    url("/assets/fonts/Gordita-Medium.woff2") format("woff2"),
+    url("/assets/fonts/Gordita-Medium.woff") format("woff"),
+    url("/assets/fonts/Gordita-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gordita";
+  src: url("/assets/fonts/Gordita-Bold.eot");
+  src: url("/assets/fonts/Gordita-Bold.eot?#iefix") format("embedded-opentype"),
+    url("/assets/fonts/Gordita-Bold.woff2") format("woff2"),
+    url("/assets/fonts/Gordita-Bold.woff") format("woff"),
+    url("/assets/fonts/Gordita-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}

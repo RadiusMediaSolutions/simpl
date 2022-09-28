@@ -1,0 +1,37 @@
+.sticky {
+  display: block;
+}
+
+.post,
+.page {
+  margin: 0 0 1.5em;
+}
+
+.updated:not(.published) {
+  display: none;
+}
+
+// .page-content,
+// .entry-content,
+// .entry-summary {
+//   margin: 1.5em 0 0;
+// }
+
+.page-links {
+  clear: both;
+  margin: 0 0 1.5em;
+}
+
+.entry-meta {
+  margin: 10px 0;
+  span {
+    color: $color-link;
+  }
+
+  a {
+    font-weight: 500;
+    &:hover {
+      color: $primary;
+    }
+  }
+}
