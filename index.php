@@ -1,14 +1,14 @@
 <?php get_header(); ?>
 
 
-<div class="container my-5">
-    <div class="row">
-        <div class="col-lg-8 col-12">
+<div class="content-area">
+    <div class="row archiveGrid">
+        <div>
             <?php
-		if ( have_posts() ) :
+					if ( have_posts() ) :
 
-			if ( is_home() && ! is_front_page() ) :
-				?>
+						if ( is_home() && ! is_front_page() ) :
+							?>
             <header>
                 <h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
             </header>
@@ -37,9 +37,7 @@
 		endif;
 		?>
         </div>
-        <div class="col-lg-4 col-12">
-            <?php get_sidebar(); ?>
-        </div>
+        <div class="simpl-sidebar  content-area"> <?php get_sidebar(); ?> </div>
     </div>
 
 </div>

@@ -1,16 +1,5 @@
-@mixin placeholder {
-  &::-webkit-input-placeholder {
-    @content;
-  }
-  &:-moz-placeholder {
-    @content;
-  }
-  &::-moz-placeholder {
-    @content;
-  }
-  &:-ms-input-placeholder {
-    @content;
-  }
+* {
+  -webkit-font-smoothing: antialiased;
 }
 
 *,
@@ -21,7 +10,9 @@
 }
 
 body {
-  font-size: 1rem;
+  width: 80%;
+  margin: auto;
+  font-size: 1.4rem;
   line-height: 1.8;
   font-weight: 400;
   font-family: $body-font;
@@ -38,110 +29,42 @@ body {
   }
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: $body-font;
-  color: $heading-color;
-  font-weight: 00;
-  line-height: 1.1;
-  margin-bottom: 0;
+.middle {
+  padding-bottom: 4em;
+  overflow: hidden;
 }
-
-h1 {
-  font-size: 36px;
-  // Responisve
-  @media #{$large-mobile} {
-    font-size: 30px;
+.wrapper {
+  width: 100%;
+}
+.wrapper > .row {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.row-fluid {
+  margin: 0 auto;
+}
+.content-area {
+  max-width: 1200px;
+  margin: 3rem auto;
+}
+.blog-with-sidebar {
+  max-width: 1200px;
+}
+/* tablets */
+@media (min-width: 768px) and (max-width: 979px) {
+  .wrapper > .row {
+    width: 80%;
   }
 }
-h2 {
-  font-size: 30px;
-  // Responisve
-  @media #{$large-mobile} {
-    font-size: 24px;
-  }
-}
-h3 {
-  font-size: 24px;
-  // Responisve
-  @media #{$large-mobile} {
-    font-size: 20px;
-  }
-}
-h4 {
-  font-size: 18px;
-}
-h5 {
-  font-size: 16px;
-}
-h6 {
-  font-size: 14px;
-}
-p {
-  margin-bottom: 0;
-}
-a,
-button {
-  color: inherit;
-  display: inline-block;
-  line-height: inherit;
-  text-decoration: none;
-  cursor: pointer;
-}
-a,
-button,
-img,
-input {
-  transition: $transition-default;
-  outline: 0;
-
-  &:focus {
-    outline: 0;
-  }
-}
-
-a:focus {
-  color: inherit;
-  outline: none;
-  text-decoration: none;
-}
-a:hover {
-  text-decoration: none;
-  color: $primary;
-}
-ul,
-li,
-ol {
-  padding: 0;
-  list-style: none;
-  margin: 10px 0;
-}
-
-button,
-input[type="submit"] {
-  cursor: pointer;
-}
-img {
-  max-width: 100%;
-}
-
-input,
-textarea {
-  @include placeholder {
-    opacity: 1;
+@media (max-width: 767px) {
+  .wrapper > .row {
+    width: 90%;
   }
 }
 
 /*-- Common Classes --*/
-.section,
-.main-wrapper {
-  float: left;
-  width: 100%;
-}
+
 // @media only screen and (min-width: 1200px) {
 //   .container {
 //     max-width: 1200px;
@@ -150,8 +73,8 @@ textarea {
 // }
 
 blockquote {
-  background-color: $text-screen;
-  color: $white;
+  background-color: $post-navigation-color;
+  color: $sidebar-bg;
   text-align: center;
   padding: 40px 50px;
   position: relative;

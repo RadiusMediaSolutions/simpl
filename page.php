@@ -2,27 +2,20 @@
 
 get_header();
 ?>
+<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+<div class="row-fluid">
 
-<div class="container">
-    <div class="row">
-        <div class="col-lg-9 col-md-6 col-12">
-
-            <?php
-				while ( have_posts() ) :
-					the_post();
-
-
-					// If comments are open or we have at least one comment, load up the comment template.
-					if ( comments_open() || get_comments_number() ) :
-						comments_template();
-					endif;
-
-				endwhile; // End of the loop.
-				?>
-        </div>
+    <div class=" content-area">
+        <h1>
+            <?php  the_title();?>
+        </h1>
+        <p> <?php the_content(); ?></p>
     </div>
 </div>
 
+<?php endwhile; else : ?>
+<p><?php esc_html_e( 'Sorry, no pages found.' ); ?></p>
+<?php endif; ?>
 <?php
 
-get_footer();
+get_footer();?>

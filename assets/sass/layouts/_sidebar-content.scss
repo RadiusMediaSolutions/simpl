@@ -18,17 +18,32 @@
 
 .widget-area {
   grid-area: sidebar;
-  ul {
-    background: $sidebar;
-    padding: 1em !important;
-  }
-  a {
-    font-weight: 500;
-  }
 }
 
 .site-footer {
   grid-area: footer;
+}
+
+.simpl-sidebar {
+  aside {
+    padding: 2rem;
+    background: $sidebar-bg;
+    color: white;
+  }
+  li {
+    border-bottom: 1px solid #836a5d;
+    padding-bottom: 10px;
+  }
+  h2 {
+    color: #fec20b;
+  }
+
+  a {
+    text-align: left;
+    &:hover {
+      color: #fec20b;
+    }
+  }
 }
 
 @import "no-sidebar";

@@ -6,20 +6,31 @@ h5,
 h6 {
   clear: both;
 }
-
+// .cat_list {
+//   .entry-title {
+//     margin-bottom: 10px;
+//   }
+// }
 .entry-title {
-  font-family: $heading-font;
-  color: $black;
-  font-weight: 400;
+  font-family: $blog-title;
+  color: $post-title-color;
+  font-weight: bold;
   line-height: 1.1;
-  margin-bottom: 0;
   & a:hover {
-    color: $primary;
+    color: $post-title-hover;
   }
 }
 
 .entry-title {
   a {
-    font-size: 1.5rem;
+    font-size: 2rem;
+  }
+}
+.content-area {
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    color: $post-title-color;
   }
 }

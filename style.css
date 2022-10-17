@@ -1,8 +1,8 @@
 /*!
 Theme Name: Simpl
-Theme URI: http://underscores.me/
+Theme URI: https://www.radiusmedia.com/
 Author: Team Radius
-Author URI: http://radiusmedia.com/
+Author URI: https://www.radiusmedia.com/
 Description: Description
 Version: 1.0.0
 Tested up to: 5.4
@@ -63,6 +63,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 @import url("https://fonts.googleapis.com/css2?family=Coustard:wght@400;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alkalami&display=swap");
 html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
@@ -394,18 +395,24 @@ h6 {
 }
 
 .entry-title {
-  font-family: "Coustard", serif;
-  color: #000;
-  font-weight: 400;
+  font-family: "Baskerville Bold";
+  color: #e10286;
+  font-weight: bold;
   line-height: 1.1;
-  margin-bottom: 0;
 }
 .entry-title a:hover {
-  color: #ffa300;
+  color: #c40677;
 }
 
 .entry-title a {
-  font-size: 1.5rem;
+  font-size: 2rem;
+}
+
+.content-area h1 {
+  font-size: 3rem;
+}
+.content-area h2 {
+  color: #e10286;
 }
 
 dfn,
@@ -459,100 +466,117 @@ big {
 /*-- Google Font --*/
 /*-- Custom Font --*/
 @font-face {
-  font-family: "Gordita";
-  src: url("/assets/fonts/Gordita-Light.eot");
-  src: url("/assets/fonts/Gordita-Light.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/Gordita-Light.woff2") format("woff2"), url("/assets/fonts/Gordita-Light.woff") format("woff"), url("/assets/fonts/Gordita-Light.ttf") format("truetype");
-  font-weight: 300;
+  font-family: "Baskerville Normal";
   font-style: normal;
-  font-display: swap;
+  font-weight: normal;
+  src: local("/assets/fonts/baskerville/Baskerville Normal"), url("/assets/fonts/baskerville/baskvl.woff") format("woff");
 }
 @font-face {
-  font-family: "Gordita";
-  src: url("/assets/fonts/Gordita-Regular.eot");
-  src: url("/assets/fonts/Gordita-Regular.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/Gordita-Regular.woff2") format("woff2"), url("/assets/fonts/Gordita-Regular.woff") format("woff"), url("../fonts/Gordita-Regular.ttf") format("truetype");
-  font-weight: 400;
+  font-family: "Baskerville Regular";
   font-style: normal;
-  font-display: swap;
+  font-weight: normal;
+  src: local("/assets/fonts/baskerville/Baskerville Regular"), url("/assets/fonts/baskerville/baskervi.woff") format("woff");
 }
 @font-face {
-  font-family: "Gordita";
-  src: url("/assets/fonts/Gordita-Medium.eot");
-  src: url("/assets/fonts/Gordita-Medium.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/Gordita-Medium.woff2") format("woff2"), url("/assets/fonts/Gordita-Medium.woff") format("woff"), url("/assets/fonts/Gordita-Medium.ttf") format("truetype");
-  font-weight: 500;
+  font-family: "Baskerville Light-Italic";
   font-style: normal;
-  font-display: swap;
+  font-weight: normal;
+  src: local("/assets/fonts/baskerville/Baskerville Light-Italic"), url("/assets/fonts/baskerville/BASKE10.woff") format("woff");
 }
 @font-face {
-  font-family: "Gordita";
-  src: url("/assets/fonts/Gordita-Bold.eot");
-  src: url("/assets/fonts/Gordita-Bold.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/Gordita-Bold.woff2") format("woff2"), url("/assets/fonts/Gordita-Bold.woff") format("woff"), url("/assets/fonts/Gordita-Bold.ttf") format("truetype");
-  font-weight: 700;
+  font-family: "Baskerville Light";
   font-style: normal;
-  font-display: swap;
+  font-weight: normal;
+  src: local("/assets/fonts/baskerville/Baskerville Light"), url("/assets/fonts/baskerville/BASKE9.woff") format("woff");
 }
-/* Elements
---------------------------------------------- */
-*,
-*::after,
-*::before {
-  box-sizing: border-box;
-  scroll-behavior: auto;
+@font-face {
+  font-family: "Baskerville LightA";
+  font-style: normal;
+  font-weight: normal;
+  src: local("/assets/fonts/baskerville/Baskerville LightA"), url("/assets/fonts/baskerville/BASKRV_L.woff") format("woff");
 }
-
-body {
-  font-size: 1rem;
-  line-height: 1.8;
-  font-weight: 400;
-  font-family: "Open Sans";
-  color: #52565b;
-  outline: none;
-  visibility: visible;
-  overflow-x: hidden;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: "";
+@font-face {
+  font-family: "Baskerville Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("/assets/fonts/baskerville/Baskerville Bold"), url("/assets/fonts/baskerville/BASKE1.woff") format("woff");
 }
-body[dir=rtl] {
-  text-align: right;
+@font-face {
+  font-family: "Baskerville Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("/assets/fonts/baskerville/Baskerville Bold"), url("/assets/fonts/baskerville/Baskerville Bold font.woff") format("woff");
 }
-
+@font-face {
+  font-family: "Baskerville BT Roman";
+  font-style: normal;
+  font-weight: normal;
+  src: local("/assets/fonts/baskerville/Baskerville BT Roman"), url("/assets/fonts/baskerville/BaskervilleBT.woff") format("woff");
+}
+@font-face {
+  font-family: "Baskerville BT Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("/assets/fonts/baskerville/Baskerville BT Italic"), url("/assets/fonts/baskerville/BaskervilleItalicBT.woff") format("woff");
+}
+@font-face {
+  font-family: "Baskerville BT Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("/assets/fonts/baskerville/Baskerville BT Bold"), url("/assets/fonts/baskerville/BaskervilleBoldBT.woff") format("woff");
+}
+@font-face {
+  font-family: "Baskerville BT Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("/assets/fonts/baskerville/Baskerville BT Bold"), url("/assets/fonts/baskerville/baskerville bold bt.woff") format("woff");
+}
+@font-face {
+  font-family: "Baskerville BT Bold Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("/assets/fonts/baskerville/Baskerville BT Bold Italic"), url("/assets/fonts/baskerville/BaskervilleBoldItalicBT.woff") format("woff");
+}
 h1,
-h2,
+h2 {
+  font-family: "Baskerville Bold";
+  color: #2c241b;
+  font-weight: default;
+  line-height: 1.1;
+}
+
 h3,
 h4,
 h5,
 h6 {
-  font-family: "Open Sans";
-  color: #2c241b;
-  font-weight: 0;
-  line-height: 1.1;
-  margin-bottom: 0;
+  font-family: "Baskerville Bold";
+  color: #aac931;
 }
 
 h1 {
-  font-size: 36px;
+  font-size: 2.25rem;
 }
 @media only screen and (max-width: 767px) {
   h1 {
-    font-size: 30px;
+    font-size: 1.875rem;
   }
 }
 
 h2 {
-  font-size: 30px;
+  font-size: 1.875rem;
 }
 @media only screen and (max-width: 767px) {
   h2 {
-    font-size: 24px;
+    font-size: 1.5rem;
   }
 }
 
 h3 {
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 @media only screen and (max-width: 767px) {
   h3 {
-    font-size: 20px;
+    font-size: 1.5rem;
   }
 }
 
@@ -569,7 +593,8 @@ h6 {
 }
 
 p {
-  margin-bottom: 0;
+  margin-bottom: 2rem;
+  text-align: justify;
 }
 
 a,
@@ -603,7 +628,7 @@ a:focus {
 
 a:hover {
   text-decoration: none;
-  color: #ffa300;
+  color: #dac2be;
 }
 
 ul,
@@ -640,16 +665,81 @@ textarea:-ms-input-placeholder {
   opacity: 1;
 }
 
-/*-- Common Classes --*/
-.section,
-.main-wrapper {
-  float: left;
+/* Elements
+--------------------------------------------- */
+* {
+  -webkit-font-smoothing: antialiased;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  scroll-behavior: auto;
+}
+
+body {
+  width: 80%;
+  margin: auto;
+  font-size: 1.4rem;
+  line-height: 1.8;
+  font-weight: 400;
+  font-family: "Open Sans";
+  color: #52565b;
+  outline: none;
+  visibility: visible;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: "";
+}
+body[dir=rtl] {
+  text-align: right;
+}
+
+.middle {
+  padding-bottom: 4em;
+  overflow: hidden;
+}
+
+.wrapper {
   width: 100%;
 }
 
+.wrapper > .row {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.row-fluid {
+  margin: 0 auto;
+}
+
+.content-area {
+  max-width: 1200px;
+  margin: 3rem auto;
+}
+
+.blog-with-sidebar {
+  max-width: 1200px;
+}
+
+/* tablets */
+@media (min-width: 768px) and (max-width: 979px) {
+  .wrapper > .row {
+    width: 80%;
+  }
+}
+@media (max-width: 767px) {
+  .wrapper > .row {
+    width: 90%;
+  }
+}
+/*-- Common Classes --*/
 blockquote {
-  background-color: #21759b;
-  color: #fff;
+  background-color: #f6edeb;
+  color: #6c5a57;
   text-align: center;
   padding: 40px 50px;
   position: relative;
@@ -763,7 +853,6 @@ input[type=text],
 input[type=email],
 input[type=url],
 input[type=password],
-input[type=search],
 input[type=number],
 input[type=tel],
 input[type=range],
@@ -784,7 +873,6 @@ input[type=text]:focus,
 input[type=email]:focus,
 input[type=url]:focus,
 input[type=password]:focus,
-input[type=search]:focus,
 input[type=number]:focus,
 input[type=tel]:focus,
 input[type=range]:focus,
@@ -805,6 +893,40 @@ select {
 
 textarea {
   width: 100%;
+}
+
+.wp-block-search__inside-wrapper input[type=search] {
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #333;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.wp-block-search__inside-wrapper .wp-block-search__button {
+  display: inline-block;
+  font-weight: 400;
+  color: #333;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: #fff;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.wp-block-search__inside-wrapper .wp-block-search__button:hover {
+  background: #ffc20a;
 }
 
 /*--------------------------------------------------------------
@@ -857,16 +979,28 @@ textarea {
 .widget-area {
   grid-area: sidebar;
 }
-.widget-area ul {
-  background: #f8f6f4;
-  padding: 1em !important;
-}
-.widget-area a {
-  font-weight: 500;
-}
 
 .site-footer {
   grid-area: footer;
+}
+
+.simpl-sidebar aside {
+  padding: 2rem;
+  background: #6c5a57;
+  color: white;
+}
+.simpl-sidebar li {
+  border-bottom: 1px solid #836a5d;
+  padding-bottom: 10px;
+}
+.simpl-sidebar h2 {
+  color: #fec20b;
+}
+.simpl-sidebar a {
+  text-align: left;
+}
+.simpl-sidebar a:hover {
+  color: #fec20b;
 }
 
 .no-sidebar .site {
@@ -880,6 +1014,36 @@ textarea {
 --------------------------------------------------------------*/
 /* Navigation
 --------------------------------------------- */
+.simpl-navigation {
+  border-style: solid;
+  border-width: 1px 0;
+  border-color: #eee;
+}
+.simpl-navigation ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.simpl-navigation ul li {
+  position: relative;
+  display: inline-block;
+  margin: 0 1.25em;
+  padding: 0.5rem 0;
+  font-size: 0.9em;
+}
+.simpl-navigation ul li .nav-link {
+  font-family: "Baskerville Bold";
+  font-size: 1.5rem;
+  font-weight: 800;
+  display: inline-block;
+}
+.simpl-navigation ul li .nav-link:hover {
+  color: #ffc20a;
+}
+.simpl-navigation .current-menu-item a {
+  color: #ffc20a;
+}
+
 .site-title {
   font-family: "UnifrakturMaguntia", cursive;
   font-size: 4em;
@@ -911,87 +1075,6 @@ textarea {
   .header-logo a img {
     width: 130px;
   }
-}
-
-.header-menu {
-  display: flex;
-  align-items: center;
-}
-.header-menu ul {
-  display: flex;
-}
-.header-menu ul li {
-  position: relative;
-}
-.header-menu ul li + li {
-  margin-left: 50px;
-}
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .header-menu ul li + li {
-    margin-left: 30px;
-  }
-}
-.header-menu ul li .nav-link {
-  font-family: "Open Sans";
-  font-size: 16px;
-  font-weight: 500;
-  color: #2c241b;
-  transition: all 0.3s linear;
-}
-.header-menu ul li .nav-link:hover,
-.header-menu ul li .nav-link .active {
-  color: #ffa300;
-}
-.header-menu ul li ul {
-  display: block;
-}
-.header-menu ul li ul li {
-  margin: 0;
-  padding: 0;
-}
-.header-menu ul li:hover a:hover {
-  color: #ffa300;
-}
-.header-menu ul li:hover > .sub-menu {
-  opacity: 1;
-  visibility: visible;
-  top: 100%;
-}
-@media only screen and (min-width: 1200px) and (max-width: 1499px), only screen and (min-width: 992px) and (max-width: 1199px) {
-  .header-menu ul li:nth-last-of-type(1) ul li .sub-menu, .header-menu ul li:nth-last-of-type(2) ul li .sub-menu {
-    left: auto;
-    right: 100%;
-  }
-}
-.header-menu .sub-menu {
-  position: absolute;
-  top: 110%;
-  left: 0;
-  width: 220px;
-  background-color: #fff;
-  box-shadow: 2px 2px 20px rgba(52, 58, 64, 0.1);
-  border-top: 2px solid #0a4d3c;
-  padding: 6px 0;
-  z-index: 9;
-  opacity: 0;
-  visibility: hidden;
-  transition: all 0.3s linear;
-}
-.header-menu .sub-menu li a {
-  padding: 6px 20px;
-  font-size: 15px;
-}
-.header-menu .sub-menu li .sub-menu {
-  left: 100%;
-  top: 0px;
-  transition: all 0.3s linear;
-  opacity: 0;
-  visibility: hidden;
-}
-.header-menu .sub-menu li:hover .sub-menu {
-  top: -8px;
-  opacity: 1;
-  visibility: visible;
 }
 
 /* Small menu. */
@@ -1030,19 +1113,20 @@ textarea {
   flex: 1 0 50%;
 }
 
-.current-menu-item .nav-link {
-  color: #ffa300 !important;
+.simpl-header {
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.copyright-text {
+  padding: 10px 0;
+  text-align: center;
 }
 
 /* Posts and pages
 --------------------------------------------- */
 .sticky {
   display: block;
-}
-
-.post,
-.page {
-  margin: 0 0 1.5em;
 }
 
 .updated:not(.published) {
@@ -1054,17 +1138,101 @@ textarea {
   margin: 0 0 1.5em;
 }
 
-.entry-meta {
-  margin: 10px 0;
+.post_nav {
+  display: flex;
+  justify-content: space-between;
 }
-.entry-meta span {
+
+.entry-meta {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #b8b8b8;
+  border-bottom: 1px solid #b8b8b8;
+  padding: 10px 0;
+  margin-top: 1rem;
+}
+
+.entry-header {
+  border-top: 1px solid #b8b8b8;
+  border-bottom: 1px solid #b8b8b8;
+}
+.entry-header h1 {
+  margin: 2.5rem 0;
+}
+.entry-header .posted-on:before {
+  font-family: "FontAwesome";
+  content: "\f073";
+  color: #ccc;
+  margin-right: 0.5rem;
+}
+.entry-header .byline:before {
+  font-family: "FontAwesome";
+  content: "\f007";
+  color: #ccc;
+  margin-left: 0.5rem;
+}
+.entry-header span {
   color: #333;
 }
-.entry-meta a {
-  font-weight: 500;
+.entry-header a:hover {
+  color: #c40677;
 }
-.entry-meta a:hover {
-  color: #ffa300;
+
+.entry-header {
+  border: none;
+}
+
+.cat_list .li_item a {
+  padding-left: 10px;
+}
+.cat_list .li_item a:first-child:before {
+  font-family: "FontAwesome";
+  content: "\f00b";
+  color: #ccc;
+  margin-right: 0.5rem;
+}
+
+.post_nav {
+  margin-top: 1.2rem;
+}
+.post_nav h4 {
+  font-size: 1rem;
+  color: #dac2be;
+}
+.post_nav a:hover {
+  color: #ffc20a;
+}
+
+.article h2,
+.article h3,
+.article h4 {
+  margin: 10px 0;
+}
+
+.drop-cap p:first-of-type:first-letter {
+  font-size: 300%;
+  font-family: "Baskerville Bold";
+  line-height: 1;
+  margin-right: 0.2em;
+}
+
+.col-4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 50px;
+}
+.col-4 h2 {
+  margin: 1rem 0;
+}
+.col-4 p {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.card {
+  background: #fff;
+  box-shadow: 1px 0px 10px #ddd;
+  padding: 30px;
 }
 
 /* Comments
@@ -1102,6 +1270,23 @@ textarea {
   display: inline-block;
 }
 
+@media (min-width: 768px) and (max-width: 979px) {
+  .wrapper > .row {
+    width: 80%;
+  }
+}
+@media (max-width: 767px) {
+  .wrapper > .row {
+    width: 90%;
+  }
+}
+@media (min-width: 1200px) {
+  .archiveGrid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 50px;
+  }
+}
 /* Captions
 --------------------------------------------- */
 .wp-caption {
@@ -1254,6 +1439,18 @@ textarea {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 1.5em;
+}
+
+.site-title {
+  font-family: "Baskerville Bold";
+  text-align: center;
+  font-size: 4em;
+  line-height: 1.3;
+  margin-top: 0;
+}
+
+.nav-link {
+  font-family: "Open Sans";
 }
 
 /*# sourceMappingURL=style.css.map */

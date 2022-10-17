@@ -2,63 +2,230 @@
 @import "copy";
 
 // Font Family
+
+$blog-title-bold: "Rockwell-Bold", "Slab serif";
 $heading-font: "Coustard", serif;
 $logo-font: "UnifrakturMaguntia", cursive;
 $body-font: "Open Sans";
 $fontawesome: "FontAwesome";
+$blog-title: "Baskerville Bold";
 
 /*-- Google Font --*/
 @import url("https://fonts.googleapis.com/css2?family=Coustard:wght@400;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alkalami&display=swap");
 
 /*-- Custom Font --*/
 @font-face {
-  font-family: "Gordita";
-  src: url("/assets/fonts/Gordita-Light.eot");
-  src: url("/assets/fonts/Gordita-Light.eot?#iefix") format("embedded-opentype"),
-    url("/assets/fonts/Gordita-Light.woff2") format("woff2"),
-    url("/assets/fonts/Gordita-Light.woff") format("woff"),
-    url("/assets/fonts/Gordita-Light.ttf") format("truetype");
-  font-weight: 300;
+  font-family: "Baskerville Normal";
   font-style: normal;
-  font-display: swap;
+  font-weight: normal;
+  src: local("/assets/fonts/baskerville/Baskerville Normal"),
+    url("/assets/fonts/baskerville/baskvl.woff") format("woff");
 }
 
 @font-face {
-  font-family: "Gordita";
-  src: url("/assets/fonts/Gordita-Regular.eot");
-  src: url("/assets/fonts/Gordita-Regular.eot?#iefix")
-      format("embedded-opentype"),
-    url("/assets/fonts/Gordita-Regular.woff2") format("woff2"),
-    url("/assets/fonts/Gordita-Regular.woff") format("woff"),
-    url("../fonts/Gordita-Regular.ttf") format("truetype");
-  font-weight: 400;
+  font-family: "Baskerville Regular";
   font-style: normal;
-  font-display: swap;
+  font-weight: normal;
+  src: local("/assets/fonts/baskerville/Baskerville Regular"),
+    url("/assets/fonts/baskerville/baskervi.woff") format("woff");
 }
 
 @font-face {
-  font-family: "Gordita";
-  src: url("/assets/fonts/Gordita-Medium.eot");
-  src: url("/assets/fonts/Gordita-Medium.eot?#iefix")
-      format("embedded-opentype"),
-    url("/assets/fonts/Gordita-Medium.woff2") format("woff2"),
-    url("/assets/fonts/Gordita-Medium.woff") format("woff"),
-    url("/assets/fonts/Gordita-Medium.ttf") format("truetype");
-  font-weight: 500;
+  font-family: "Baskerville Light-Italic";
   font-style: normal;
-  font-display: swap;
+  font-weight: normal;
+  src: local("/assets/fonts/baskerville/Baskerville Light-Italic"),
+    url("/assets/fonts/baskerville/BASKE10.woff") format("woff");
 }
 
 @font-face {
-  font-family: "Gordita";
-  src: url("/assets/fonts/Gordita-Bold.eot");
-  src: url("/assets/fonts/Gordita-Bold.eot?#iefix") format("embedded-opentype"),
-    url("/assets/fonts/Gordita-Bold.woff2") format("woff2"),
-    url("/assets/fonts/Gordita-Bold.woff") format("woff"),
-    url("/assets/fonts/Gordita-Bold.ttf") format("truetype");
-  font-weight: 700;
+  font-family: "Baskerville Light";
   font-style: normal;
-  font-display: swap;
+  font-weight: normal;
+  src: local("/assets/fonts/baskerville/Baskerville Light"),
+    url("/assets/fonts/baskerville/BASKE9.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Baskerville LightA";
+  font-style: normal;
+  font-weight: normal;
+  src: local("/assets/fonts/baskerville/Baskerville LightA"),
+    url("/assets/fonts/baskerville/BASKRV_L.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Baskerville Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("/assets/fonts/baskerville/Baskerville Bold"),
+    url("/assets/fonts/baskerville/BASKE1.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Baskerville Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("/assets/fonts/baskerville/Baskerville Bold"),
+    url("/assets/fonts/baskerville/Baskerville Bold font.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Baskerville BT Roman";
+  font-style: normal;
+  font-weight: normal;
+  src: local("/assets/fonts/baskerville/Baskerville BT Roman"),
+    url("/assets/fonts/baskerville/BaskervilleBT.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Baskerville BT Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("/assets/fonts/baskerville/Baskerville BT Italic"),
+    url("/assets/fonts/baskerville/BaskervilleItalicBT.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Baskerville BT Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("/assets/fonts/baskerville/Baskerville BT Bold"),
+    url("/assets/fonts/baskerville/BaskervilleBoldBT.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Baskerville BT Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("/assets/fonts/baskerville/Baskerville BT Bold"),
+    url("/assets/fonts/baskerville/baskerville bold bt.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Baskerville BT Bold Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("/assets/fonts/baskerville/Baskerville BT Bold Italic"),
+    url("/assets/fonts/baskerville/BaskervilleBoldItalicBT.woff") format("woff");
+}
+
+h1,
+h2 {
+  font-family: $blog-title;
+  color: $heading-color;
+  font-weight: default;
+  line-height: 1.1;
+  // margin-bottom: 0;
+}
+h3,
+h4,
+h5,
+h6 {
+  font-family: $blog-title;
+  color: $sub-heading-color;
+}
+
+h1 {
+  font-size: 2.25rem;
+  // Responisve
+  @media #{$large-mobile} {
+    font-size: 1.875rem;
+  }
+}
+h2 {
+  font-size: 1.875rem;
+  // Responisve
+  @media #{$large-mobile} {
+    font-size: 1.5rem;
+  }
+}
+h3 {
+  font-size: 1.5rem;
+  // Responisve
+  @media #{$large-mobile} {
+    font-size: 1.5rem;
+  }
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 14px;
+}
+p {
+  margin-bottom: 2rem;
+  text-align: justify;
+}
+a,
+button {
+  color: inherit;
+  display: inline-block;
+  line-height: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+a,
+button,
+img,
+input {
+  transition: $transition-default;
+  outline: 0;
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+a:focus {
+  color: inherit;
+  outline: none;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+  color: $post-navigation-dark;
+}
+ul,
+li,
+ol {
+  padding: 0;
+  list-style: none;
+  margin: 10px 0;
+}
+
+button,
+input[type="submit"] {
+  cursor: pointer;
+}
+img {
+  max-width: 100%;
+}
+
+@mixin placeholder {
+  &::-webkit-input-placeholder {
+    @content;
+  }
+  &:-moz-placeholder {
+    @content;
+  }
+  &::-moz-placeholder {
+    @content;
+  }
+  &:-ms-input-placeholder {
+    @content;
+  }
+}
+
+input,
+textarea {
+  @include placeholder {
+    opacity: 1;
+  }
 }
